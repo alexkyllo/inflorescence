@@ -1,0 +1,11 @@
+flwr[simulation]
+loguru
+numpy
+openml
+pandas
+pytorch-lightning
+scikit-learn
+tensorflow
+torch
+torchmetrics
+torchvision

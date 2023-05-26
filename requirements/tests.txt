@@ -1,0 +1,8 @@
+flwr[simulation]
+loguru
+numpy
+openml
+pandas
+scikit-learn
+torch
+torchmetrics
