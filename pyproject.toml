@@ -1,0 +1,32 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "inflorescence"
+authors = [{name = "Alex Kyllo", email = "alex.kyllo@gmail.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: Apache Software License"]
+requires-python = ">=3.7"
+dynamic = ["version", "description"]
+dependencies = [
+    "flwr[simulation] >=1.0",
+    "loguru",
+    "numpy >=1.0",
+    "openml",
+    "pandas >=1.0",
+    "scikit-learn >=1.2",
+]
+[project.optional-dependencies]
+test = [
+    "pytest >=2.7.3",
+    "pytest-cov",
+]
+doc = ["sphinx"]
+
+[project.urls]
+Home = "https://github.com/alexkyllo/inflorescence"
+
+[tool.isort]
+profile = "black"
